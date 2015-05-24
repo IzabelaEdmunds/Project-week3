@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 The whole transformations/work is done by “run_analysis.R” script 
 so no manual steps are necessary (it takes around 1 minute to run together with downloading the file). 
 
@@ -111,3 +112,6 @@ data3 <- dcast(data2_melt, activity + subject ~ variable, mean)
 
 # write second result to a table in "data" folder
 write.table(data3, "./data/activity_subject_means.txt", row.name=FALSE)
+=======
+# Project-week3
+>>>>>>> 922cb79e52156fa98a59a182546938cef46d2361
