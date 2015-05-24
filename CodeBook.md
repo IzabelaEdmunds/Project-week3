@@ -1,6 +1,7 @@
 # Getting and Cleaning Data Course Project CodeBook
 ## This code book describes the work performed to clean up the data and additional columns in two files created by the script. 
 The whole transformations/work is done by “run_analysis.R” script so no manual steps are necessary (it takes around 1 minute to run together with downloading the file). 
+## The script run environment is Windows 7 (64-bit), R version 3.1.3 and RStudio version 0.98.1103
 Please read README.md to see the script and its detailed description.
 
 ** Please note English is not my first language, so I do apologise for any spelling/grammar mistakes and hope all reads clear and is understandable.
@@ -29,11 +30,11 @@ Here I have described simply how “run_analysis.R” script works (details in READM
 3. Then downloads the file to "data" directory as "download.zip" and records date and time of the download as variable “dateDownloaded” and prints date and time of the download to console.
 4. Then it unzips the file into “data” directory into directory “UCI HAR Dataset” (as per zip file content).
 5. Then the script follows the 5 steps of the assignment:
-* Merges the training and the test data sets to create one data set.
-* Extracts only the measurements on the mean and standard deviation for each measurement.
-* Renames activity names to name the activities in the data set to be descriptive.
-* Labels appropriately the data set with descriptive variable names. 
-* From the last data set (in step 4), it creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+	* Merges the training and the test data sets to create one data set.
+	* Extracts only the measurements on the mean and standard deviation for each measurement.
+	* Renames activity names to name the activities in the data set to be descriptive.
+	* Labels appropriately the data set with descriptive variable names. 
+	* From the last data set, it creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 6. Both files (“measurements_mean_std.txt” and “activity_subject_means.txt”) are saved by write.table() in “data” folder. They should be read by using read.table()
 
 # The script’s output data
