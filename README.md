@@ -1,7 +1,10 @@
 ##The whole transformations/work is done by “run_analysis.R” script 
 No manual steps are necessary (it takes around 1 minute to run together with downloading the file). 
 
-It will result in two csv files being written:
+The script run environment is Windows 7 (64-bit), R version 3.1.3 and RStudio version 0.98.1103
+
+
+Te scrip will result in two text files being written:
 
 * measurements_mean_std.txt - containing only the mean and standard deviation for each measurement.
 * activity_subject_means.txt - containing data set with the average of each variable for each activity and each subject.
