@@ -46,7 +46,7 @@ Load library for "Reshape Grouped Data"
 
 `library(reshape2)`
 
-1. Merge the training and the test sets to create one data set.
+1) Merge the training and the test sets to create one data set.
 
 	Read each table into one variable from "train" and "test" folder by "x", "y" and "subject"
 
@@ -71,7 +71,7 @@ Load library for "Reshape Grouped Data"
 `joint_subject <- rbind(subject_train_data, subject_test_data)`
 
 
-2. Extract only the measurements on the mean and standard deviation for each measurement. 
+2) Extract only the measurements on the mean and standard deviation for each measurement. 
 
 	Read features into a table as variable "features"
 
@@ -96,7 +96,7 @@ Load library for "Reshape Grouped Data"
 `new_x <- joint_x[, measurements]`
 
 
-3. Use descriptive activity names to name the activities in the dataset
+3) Use descriptive activity names to name the activities in the dataset
 
 	Read activity descriptions into a table as variable "activities"
 
@@ -111,7 +111,7 @@ Load library for "Reshape Grouped Data"
 `new_y <- merge(joint_y, activities)`
 
 
-4. Appropriately labels the data set with descriptive activity names.
+4) Appropriately labels the data set with descriptive activity names.
 
 	Join measurements dataset with activity labels
 
@@ -126,7 +126,7 @@ Load library for "Reshape Grouped Data"
 `data2 <- cbind(data1, joint_subject)`
 
 
-5. From the data set in step 4 (data2), create a second, independent tidy data set with the average of each variable for each activity and each subject.
+5) From the data set in step 4 (data2), create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 	Summarise means per activity and subject
 
