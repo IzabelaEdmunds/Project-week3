@@ -2,6 +2,7 @@
 ## This code book describes the work performed to clean up the data and additional columns in two files created by the script. 
 The whole transformations/work is done by “run_analysis.R” script so no manual steps are necessary (it takes around 1 minute to run together with downloading the file). 
 Please read README.md to see the script and its detailed description.
+
 ** Please note English is not my first language, so I do apologise for any spelling/grammar mistakes and hope all reads clear and is understandable.
 ## Source Files 
 The data was obtained from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
@@ -35,6 +36,7 @@ Here I have described simply how “run_analysis.R” script works (details in READM
 ## The columns in “measurements_mean_std.txt” is as follows:
 * Activity - descriptive label of activity
 all the other columns list the measurements as in the “features_info.txt” file in the original raw data set. 
+
 ## The columns in “activity_subject_means.txt” is as follows:
 * activity - descriptive label of activity
 * subject - test subject id
